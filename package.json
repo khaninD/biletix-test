@@ -57,14 +57,15 @@
     "postcss": "^5.0.21"
   },
   "dependencies": {
+    "autoprefixer": "*",
     "classnames": "^2.2.5",
-    "prop-types": "^15.5.10",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
     "node-sass": "^3.7.0",
     "postcss-loader": "^2.0.6",
-    "autoprefixer": "*",
-    "react-css-modules": "^3.7.10"
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-css-modules": "^3.7.10",
+    "react-dom": "^15.6.1",
+    "whatwg-fetch": "^2.0.3"
   },
   "peerDependencies": {
     "prop-types": "^15.0.0",
