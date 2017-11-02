@@ -1,5 +1,5 @@
 import React from 'react';
-import App from '../src/components/hello-world/index';
+import App from '../src/containers/app';
 const { shallow } = require('enzyme');
 
 describe('react-component: App', () => {

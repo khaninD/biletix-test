@@ -9,6 +9,7 @@
     "react"
   ],
   "rules": {
+    "max-len": ["error", 120],
     "linebreak-style": 0,
     "valid-jsdoc": ["error", {
       "requireReturn": false

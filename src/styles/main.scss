@@ -1,5 +1,5 @@
 $bodyColor: linear-gradient(to right, white, rgba(236, 238, 242, 1), rgba(224, 228, 234, 1));
-$logos-images-width: 90px;
+
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Black.ttf');
@@ -13,34 +13,30 @@ body {
   text-align:center;
 }
 
-.parent {
+.app__filters {
   display:flex;
-  align-items: stretch;
-  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.wrapper {
-  min-width:400px;
-}
-
-.yeoman_logo{
-  width: 120px;
-}
-
-.logos_wrapper {
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.logos_wrapper {
-  img {
-    width: $logos-images-width
+.app__filters {
+  h3 {
+    text-align: center;
   }
 }
 
-.github_logo_wrapper {
-  padding: 20px;
+.app__dataTable {
+  border: 5px solid green;
+}
+@media screen and (max-width: 600px) {
+  table {width:100%;}
+  thead {display: none;}
+  tr:nth-of-type(2n) {background-color: inherit;}
+  tr td:first-child {background: #f0f0f0; font-weight:bold;font-size:1.3em;}
+  tbody td {display: block;  text-align:center;}
+  tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align:center;
+  }
 }
 

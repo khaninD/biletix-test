@@ -1,5 +1,7 @@
-$list-item-border-color: #8dc63f;
-
 .list-item {
   border: 1px solid #ccc;  /* границы между строками */
+}
+
+.list-item__date-year {
+  font-size: 12px;
 }

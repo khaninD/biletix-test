@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import CSSModules from 'react-css-modules';
-import styles from './main.scss';
+import './main.scss';
 
-let List = ({price, ak, departure_time, duration_in_seconds}) => (
-  <tr styleName='list-item'>
+let List = ({price, ak, departure_time: [year, month, day, hour, minutes], duration_in_seconds}) => (
+  <tr className='list-item'>
     <td>{price}</td>
     <td>{ak}</td>
-    <td>{departure_time}</td>
+    <td>
+      <span className='list-item__date-time'>{`${hour}:${minutes}`}</span>
+      <span className='list-item__date-year'>{` ${day}.${month}.${year}`}</span>
+    </td>
     <td>{duration_in_seconds}</td>
   </tr>
 );
 
-List = CSSModules(List, styles);
 export default List;
