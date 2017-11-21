@@ -29,7 +29,7 @@ const getNewObject = data => data.map((item, index) => Object.assign({}, item));
 
 const getDate = (date, flag) => {
   date = new Date(date);
-  const restDate = [date.getFullYear(), date.getMonth(), date.getDate()];
+  const restDate = [date.getFullYear(), date.getMonth() + 1, date.getDate()];
   const fullDate = [...restDate, date.getHours(), date.getMinutes()];
   return flag ? fullDate : restDate;
 };

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import 'whatwg-fetch'
 import '../styles/main.scss';
-import {dataUrl, timeAfterLoad} from "../js/constants";
+import {dataUrl, timeAfterLoad, errorTarget} from "../js/constants";
 import {findActives, timeFormat, getNewObject, getDate, isDiff} from "../js/utils";
 //components
 import Offers from '../components/offers';
@@ -81,7 +81,7 @@ class App extends Component {
                 checkBoxOptions
               })
             } else {
-              console.warn('Не найден targetObject в структуре данных, посмотрите логику!')
+              console.warn(errorTarget)
             }
           }
         };
@@ -224,7 +224,6 @@ class App extends Component {
   render () {
     const {dataList, error, sliderOptions, checkBoxOptions} = this.state;
     const {filterByAk, filterByDate} = filterCaptions;
-    // @TODO не нравится что мержит при каждом рендеринге это неправильно все должно быть в initial state
     const options = sliderOptions ? this._getSliderOptions() : null;
     let data = dataList ? this._filterData(getNewObject(dataList)) : null;
     //this this we get manipulation with sorted data, as: timeFormat ...

@@ -10,41 +10,17 @@ body {
   font-family: 'Roboto', sans-serif;
   text-align: center; }
 
-.parent {
+.app__filters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  margin-bottom: 20px; }
 
-.wrapper {
-  min-width: 400px; }
+.app__filters h3 {
+  text-align: center; }
 
-.yeoman_logo {
-  width: 120px; }
-
-.logos_wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline; }
-
-.logos_wrapper img {
-  width: 90px; }
-
-.github_logo_wrapper {
-  padding: 20px; }
+.app__dataTable {
+  border: 5px solid green; }
 
 @media screen and (max-width: 600px) {
   table {
@@ -68,6 +44,9 @@ body {
 .list-item {
   border: 1px solid #ccc;
   /* границы между строками */ }
+
+.list-item__date-year {
+  font-size: 12px; }
 .input-range-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,13 +148,10 @@ body {
   height: 1rem;
   position: relative;
   width: 100%; }
-.input-range-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 10px; }
+.react-checkBoxes-item {
+  text-align: left; }
 
-.input-range-item > div {
-  margin: 0px 50px; }
+.react-checkBoxes-item__title {
+  text-align: center; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZXMvc3R5bGVzLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
